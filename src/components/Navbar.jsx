@@ -10,19 +10,19 @@ const user=await getUser()
 
 const navItem=(
     <>
-     <Link href='/' className="text-sm text-gray-500 font-semibold mr-4 btn border-2 border-gray-600">Home</Link>
-     <Link href={user?`/profile`:'/api/auth/login'} className="text-sm text-gray-500 font-semibold mr-4 btn border-2 border-gray-600">Profile</Link>
+     <Link href='/' className="text-sm text-blue-800 font-semibold mr-4 btn border-2 border-blue-800">Home</Link>
+     <Link href={user?`/profile`:'/api/auth/login'} className="text-sm text-blue-800 font-semibold mr-4 btn border-2 border-blue-800">Profile</Link>
 {user?
- <LogoutLink className="text-sm text-gray-500 font-semibold mr-4 btn border-2 border-gray-600">Log-Out</LogoutLink>
- :<><LoginLink  className="text-sm text-gray-500 font-semibold mr-4 btn border-2 border-gray-600">Sign in</LoginLink>
-<RegisterLink className="text-sm text-gray-500 font-semibold btn border-2 border-gray-600">Sign up</RegisterLink></>
+ <LogoutLink className="text-sm text-blue-800 font-semibold mr-4 btn border-2 border-blue-800">Log-Out</LogoutLink>
+ :<><LoginLink  className="text-sm text-blue-800 font-semibold mr-4 btn border-2 border-blue-800">Sign in</LoginLink>
+<RegisterLink className="text-sm text-blue-800 font-semibold btn border-2 border-blue-800">Sign up</RegisterLink></>
 }
  </>
 )
 
     return (
         <div>
-            <div className="navbar bg-gray-300 px-6">
+            <div className="navbar bg-blue-500 px-6">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

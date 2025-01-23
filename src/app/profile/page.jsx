@@ -13,8 +13,8 @@ const profile = async() => {
         <p className="text-base font-semibold text-gray-600">Name : </p>
     </div>
     <div>
-        <p className="text-base font-semibold text-gray-600">{user.email}</p>
-        <p className="text-base font-semibold text-gray-600">{user.given_name} {user.family_name}</p>
+        <p className="text-base font-semibold text-gray-600">{user?.email}</p>
+        <p className="text-base font-semibold text-gray-600">{user?.given_name} {user?.family_name}</p>
     </div>
 </div>
         </div>
